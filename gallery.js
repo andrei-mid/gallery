@@ -1,17 +1,17 @@
+let images = ["A310.jpg", "A320.jpg", "A330.jpg", "A340.jpg", "A350.jpg", "A380.jpg"];
+let cnt = 0;
 
-
-function upDate(previewPic){
-
-    let imagediv = document.getElementById("image");
-    imagediv.style.backgroundImage = "url('"+ previewPic.src+"')";
-    imagediv.innerHTML = previewPic.alt;
-
+function schimbaimg() {
+    cnt++;
+    if (cnt >= images.length) {
+        cnt = 0;
+    }
+    document.getElementById("imageDisplay").src = images[cnt];
 }
-   
-function unDo(){
 
-    let imageDiv = document.getElementById("image");
-    imageDiv.style.backgroundImage = "url('original-image.jpg')";
-    imageDiv.innerHTML = "Hover over an image below to display here.";
-           
+function upDate(idimg)
+{
+    let imgalt = document.getElementById(idimg);
+    document.getElementById("par") = imgalt;
+    alert("ba")
 }
