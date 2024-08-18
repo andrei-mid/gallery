@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
-	<link rel="stylesheet" href="gallery.css">
-	<script src = "gallery.js"></script>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="gallery.js"></script>
+    <link href="dist/css/lightbox.css" rel="stylesheet">
 </head>
 <body>
-	
-	<div id = "image">
-		Hover over an image below to display here.
-	</div>
-	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
 
+    <div id="poza1">
+        <img id="imageDisplay" src="A310.jpg" alt="A310" width="300">
+        <p id = "par">Click the button below for a new image</p>
+    </div>
+    <button onclick="schimbaimg()" id="buton1">Click for a new image</button>
+
+    <a href="A310.jpg" data-lightbox="A310" data-title="This is a A310">
+        <img class="preview" alt="A310" src="A310.jpg" >
+    </a> 
+    <a href="A320.jpg" data-lightbox="A320" data-title="This is a A320">
+        <img class="preview" alt="A320" src="A320.jpg" >
+    </a> 
+    <a href="A330.jpg" data-lightbox="A330" data-title="This is a A330">
+        <img class="preview" alt="A330" src="A330.jpg" >
+    </a> 
+    <a href="A340.jpg" data-lightbox="A340" data-title="This is a A340">
+        <img class="preview" alt="A340" src="A340.jpg" >
+    </a> 
+    <a href="A350.jpg" data-lightbox="A350" data-title="This is a A350">
+        <img class="preview" alt="A350" src="A350.jpg" >
+    </a> 
+    <a href="A380.jpg" data-lightbox="A380" data-title="This is a A380">
+        <img class="preview" alt="A380" src="A380.jpg" >
+    </a> 
+
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
